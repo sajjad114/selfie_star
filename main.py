@@ -18,6 +18,6 @@ while True:
             time_stamp = datetime.datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
             file_name = f'selfie-{time_stamp}.png'
             cv2.imwrite(file_name, original_frame)
-    cv2.imshow('cam star', frame)
+    cv2.imshow('cam star', frame) 
     if cv2.waitKey(10) == ord('q'):
         break
